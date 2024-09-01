@@ -33,11 +33,10 @@
  
 ## ไฟล์ .gitignore 
 ไฟล์ .gitignore มีไว้เพื่อให้ Git ไม่สนใจไฟล์และโฟลเดอร์ที่อยู่ในไฟล์ .gitignore ซึ่งภายในไฟล์นั้นจะมีไฟล์ที่ไม่ควรแชร์กับผู้อื่น ไฟล์ที่สามารถสร้างใหม่ได้ หรือไฟล์ที่ขนาดใหญ่ เพื่อให้สะอาด ปลอดภัย และง่ายต่อการจัดการ โดยของ Strapi จะประกอบด้วยไฟล์ดังกล่างคร่าวๆ ดังนี้
-
-	- node_modules/: โฟลเดอร์ที่เก็บ dependencies ของโปรเจกต์ ซึ่งสามารถติดตั้งใหม่ได้ด้วยคำสั่ง npm install หรือ yarn install
-	- .env: ไฟล์ที่เก็บตัวแปรสภาพแวดล้อม (Environment Variables) ที่อาจมีข้อมูลสำคัญเช่น คีย์ API หรือรหัสผ่าน
+ - node_modules/: โฟลเดอร์ที่เก็บ dependencies ของโปรเจกต์ ซึ่งสามารถติดตั้งใหม่ได้ด้วยคำสั่ง npm install หรือ yarn install
+ - .env: ไฟล์ที่เก็บตัวแปรสภาพแวดล้อม (Environment Variables) ที่อาจมีข้อมูลสำคัญเช่น คีย์ API หรือรหัสผ่าน
 	- build/ หรือ dist/: โฟลเดอร์ที่ใช้เก็บไฟล์ที่ถูกสร้างขึ้นจากการ build ซึ่งสามารถสร้างใหม่ได้
-	- /.cache: โฟลเดอร์ที่ใช้เก็บข้อมูลที่แคชซึ่งไม่จำเป็นต้องเก็บไว้ในระบบควบคุมเวอร์ชัน
+ - /.cache: โฟลเดอร์ที่ใช้เก็บข้อมูลที่แคชซึ่งไม่จำเป็นต้องเก็บไว้ในระบบควบคุมเวอร์ชัน
 
 ## ขั้นตอนการติดตั้ง Strapi ด้วย CLI 
 **ความต้องการระบบ**
@@ -77,9 +76,9 @@
  `sudo apt install -y nodejs` และ
  `node -v && npm -v` 
  5. สร้าง directory .npm-global และ Set path มา directory สำหรับ node_modules โดยใช้คำสั่ง
- `cd ~`  
- `mkdir ~/.npm-global`  
- `npm config set prefix '~/.npm-global'`
+ `cd ~`   
+ `mkdir ~/.npm-global`   
+ `npm config set prefix '~/.npm-global'` 
  6. สร้าง หรือแก้ไขไฟล์ ~/.profile
  `sudo nano ~/.profile` 
  7. เพิ่ม `export PATH=~/.npm-global/bin:$PATH` ไว้บรรดทัดด้านสุดท้าย
