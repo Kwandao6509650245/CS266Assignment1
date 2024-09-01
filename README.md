@@ -87,7 +87,7 @@
   12. ติดตั้ง library โดยใช้คำสั่ง
   `npm install`
   13. สร้างไฟล์ .env โดยใช้คำสั่ง `touch .env` และ copy เนื้อหาในไฟล์ project จากเครื่อง local ใส่ในไฟล์ที่พึ่งสร้างขึ้นแล้ะเพิ่มบรรทัดสุดท้าย ดังนี้ `NODE_ENV=production`
-  14. รัน Project Strapi โดยใช้คำสั่ง `npm  run  develop`
+  14. รัน Project Strapi โดยใช้คำสั่ง `npm start`
 
  **Ref** : https://docs.strapi.io/dev-docs/deployment/amazon-aws
 
